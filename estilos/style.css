@@ -58,3 +58,91 @@ nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+
+/* CONFIGURAÇÃO DO MAIN */
+main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
+}
+
+/* section#ficha img.foto {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+} */
+
+section#ficha img.foto {
+  width: 200px;               
+  /* Define a largura fixa da imagem em 200 pixels */
+
+  aspect-ratio: 1/1;          
+  /* Mantém a imagem sempre quadrada (largura = altura) */
+
+  object-fit: cover;          
+  /* Faz a imagem preencher todo o espaço sem distorcer,
+     cortando as partes que ultrapassarem o enquadramento */
+
+  overflow: hidden;           
+  /* Esconde qualquer parte da imagem que ultrapasse os limites do elemento */
+
+  border-radius: 50%;         
+  /* Transforma a imagem em um círculo perfeito */
+
+  border: 5px solid var(--fundo-card);
+  /* Cria uma borda sólida de 5px usando a cor da variável --fundo-card */
+
+  outline: 5px solid var(--destaque);
+  /* Adiciona um contorno externo de 5px com a cor definida em --destaque */
+
+  display: block;             
+  /* Faz a imagem se comportar como um bloco,
+     permitindo controlar margens e alinhamento */
+
+  margin: auto;               
+  /* Centraliza a imagem horizontalmente dentro do elemento pai */
+
+  margin-bottom: 15px;        
+  /* Cria um espaço inferior entre a imagem e o conteúdo abaixo */
+}
+
+section#ficha h1 {
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  gap: 1em;
+  margin-top: 15px;
+}
+
+div#social a { 
+  color: var(--destaque);
+  transition: color 0.4s;
+}
+
+div#social a:hover {
+  color: var(--destaque-inverso);
+}
